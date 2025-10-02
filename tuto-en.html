@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Order | Potes de terre</title>
@@ -7,107 +8,113 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
-<header>
-    <div class="banniere">
-        <a href="index-en.html">
-            <img src="images/logo.svg" alt="logo" class="logo">
-        </a>
-        <p class="titre">Potes de terre</p>
-        <a target="_blank" href="https://www.facebook.com/groups/potesdeterre" class="facebook-icon">
-            <i class="fa-brands fa-facebook-f"></i>
-        </a>
-        <a target="_blank" href="mailto:potesdeterre@gmail.com" class="mail-icon">
-            <i class="fa-solid fa-envelope"></i>
-        </a>
-        <form method="get" action="" onchange="redirectToLanguage();">
-            <p>
-                <label for="langue"></label>
-                <select name="langue" id="langue">
-                    <option value="fr">fr</option>
-                    <option value="en" selected>en</option>
-                </select>
-            </p>
-        </form>
-        <script>
-            function redirectToLanguage() {
-                const langue = document.getElementById('langue').value;
-                if (langue === 'fr') {
-                    window.location.href = 'tuto.html';
-                } else if (langue === 'en') {
-                    window.location.href = 'tuto-en.html';
+    <header>
+        <div class="banniere">
+            <a href="index-en.html">
+                <img src="images/logo.svg" alt="logo" class="logo">
+            </a>
+            <p class="titre">Potes de terre</p>
+            <a target="_blank" href="https://www.facebook.com/groups/potesdeterre" class="facebook-icon">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a target="_blank" href="mailto:potesdeterre@gmail.com" class="mail-icon">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+            <form method="get" action="" onchange="redirectToLanguage();">
+                <p>
+                    <label for="langue"></label>
+                    <select name="langue" id="langue">
+                        <option value="fr">fr</option>
+                        <option value="en" selected>en</option>
+                    </select>
+                </p>
+            </form>
+            <script>
+                function redirectToLanguage() {
+                    const langue = document.getElementById('langue').value;
+                    if (langue === 'fr') {
+                        window.location.href = 'tuto.html';
+                    } else if (langue === 'en') {
+                        window.location.href = 'tuto-en.html';
+                    }
                 }
-            }
-        </script>
-        <a href="index-en.html" class="b_commander">
-            Home
-        </a>
-    </div>
-</header>
-<div class="page">
-    <div class="intro">
-        <div class="txt-intro">
-            <h1>Welcome to the payment page!</h1>
-            <p class="par">Potes de terre uses Lydia® for its payments.</p>
-            <h1>Why?</h1>
-            <p class="par">Potes de terre is committed to reselling at the price set by the supplier and therefore makes no profit. Lydia® is the ideal solution for fee-free payments.</p>
+            </script>
+            <a href="index-en.html" class="b_commander">
+                Home
+            </a>
         </div>
-    </div>
-    <div class="txt-tuto">
-        <p class="ol-title">How to pay?</p>
-        <ol>
-            <li>Install Lydia®</li>
-            <img src="images/lydia-logo.svg" alt="Lydia logo" class="lydia-logo">
-            <div class="app">
-                <a target="_blank" href="https://apps.apple.com/be/app/lydia/id6475691727">
-                    <img src="images/app-store-en.svg" alt="app-store-logo" class="store">
-                </a>
-                <a target="_blank" href="https://play.google.com/store/apps/details?hl=en_US&id=com.lydia.app">
-                    <img src="images/play-store-en.svg" alt="google-play-store-logo" class="store">
-                </a>
+    </header>
+    <div class="page">
+        <div class="intro">
+            <div class="txt-intro">
+                <h1>Welcome to the payment page!</h1>
+                <p class="par">Potes de terre uses Lydia® for its payments.</p>
+                <h1>Why?</h1>
+                <p class="par">Potes de terre is committed to reselling at the price set by the supplier and therefore
+                    makes no profit. Lydia® is the ideal solution for fee-free payments.</p>
             </div>
-            <li>Open the app. Enter the amount you want to send, then click <span class="gras">Send</span>.</li>
-            <img src="images/tuto1.jpg" alt="tuto1" class="screenshot">
-            <li>Click <span class="gras">Enter a number / email</span></li>
-            <img src="images/tuto2.jpg" alt="tuto2" class="screenshot">
-            <li>Enter the address: <a href="mailto:potesdeterre@gmail.com" class="hp-lien">potesdeterre@gmail.com</a></li>
-            <li>Fill in the following information:</li>
-            <ul class="liste-inter">
-                <li>The price: calculate based on what you are ordering:
-                    <ul class="prix_rappel">
-                        <li>Fruit and vegetable basket: €12</li>
-                        <li>Half fruit and vegetable basket: €6</li>
-                        <li>Fruit basket: €10</li>
-                        <li>Half fruit basket: €5</li>
-                    </ul>
-                </li>
-                <li>Your first and last name.</li>
-                <li>What you want to order.</li>
-            </ul>
-            <img src="images/tuto3.jpg" alt="tuto3" class="screenshot">
-            <li>Choose your payment method, and confirm.</li>
-        </ol>
-    </div>
-</div>
-<footer>
-    <div class="pied">
-        <div>
-            <p>Contact us:</p>
-            <ul>
-                <li>
-                    <a href="mailto:potesdeterre@gmail.com" class="hp-lien">potesdeterre@gmail.com</a>
-                </li>
-                <li>On site: every Thursday at 4 PM at the MDE</li>
-            </ul>
         </div>
-        <a href="index-en.html">
-            <img src="images/logo.svg" alt="logo" class="logo">
-        </a>
+        <div class="txt-tuto">
+            <p class="ol-title">How to pay?</p>
+            <ol>
+                <li>Install Lydia®</li>
+                <img src="images/lydia-logo.svg" alt="Lydia logo" class="lydia-logo">
+                <div class="app">
+                    <a target="_blank" href="https://apps.apple.com/be/app/lydia/id6475691727">
+                        <img src="images/app-store-en.svg" alt="app-store-logo" class="store">
+                    </a>
+                    <a target="_blank" href="https://play.google.com/store/apps/details?hl=en_US&id=com.lydia.app">
+                        <img src="images/play-store-en.svg" alt="google-play-store-logo" class="store">
+                    </a>
+                </div>
+                <li>Open the app. Enter the amount you want to send, then click <span class="gras">Send</span>.</li>
+                <img src="images/tuto1.jpg" alt="tuto1" class="screenshot">
+                <li>Click <span class="gras">Enter a number / email</span></li>
+                <img src="images/tuto2.jpg" alt="tuto2" class="screenshot">
+                <li>Enter the address: <a href="mailto:potesdeterre@gmail.com"
+                        class="hp-lien">potesdeterre@gmail.com</a></li>
+                <li>Fill in the following information:</li>
+                <ul class="liste-inter">
+                    <li>The price: calculate based on what you are ordering:
+                        <ul class="prix_rappel">
+                            <li>Fruit and vegetable basket: €12</li>
+                            <li>Half fruit and vegetable basket: €6</li>
+                            <li>Fruit basket: €10</li>
+                            <li>Half fruit basket: €5</li>
+                        </ul>
+                    </li>
+                    <li>Your first and last name.</li>
+                    <li>What you want to order.</li>
+                </ul>
+                <img src="images/tuto3.jpg" alt="tuto3" class="screenshot">
+                <li>Choose your payment method, and confirm.</li>
+            </ol>
+        </div>
     </div>
-</footer>
+    <footer>
+        <div class="pied">
+            <div>
+                <p>Contact us:</p>
+                <ul>
+                    <li>
+                        <a href="mailto:potesdeterre@gmail.com" class="hp-lien">potesdeterre@gmail.com</a>
+                    </li>
+                    <li>On site: every Thursday at 1 PM at the MDE</li>
+                </ul>
+            </div>
+            <a href="index-en.html">
+                <img src="images/logo.svg" alt="logo" class="logo">
+            </a>
+        </div>
+    </footer>
 </body>
+
 </html>

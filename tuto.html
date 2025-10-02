@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <title>Commander | Potes de terre</title>
@@ -7,107 +8,114 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
-<header>
-    <div class="banniere">
-        <a href="index.html">
-            <img src="images/logo.svg" alt="logo" class="logo">
-        </a>
-        <p class="titre">Potes de terre</p>
-        <a target="_blank" href="https://www.facebook.com/groups/potesdeterre" class="facebook-icon">
-            <i class="fa-brands fa-facebook-f"></i>
-        </a>
-        <a target="_blank" href="mailto:potesdeterre@gmail.com" class="mail-icon">
-            <i class="fa-solid fa-envelope"></i>
-        </a>
-        <form method="get" action="" onchange="redirectToLanguage();">
-            <p>
-                <label for="langue"></label>
-                <select name="langue" id="langue">
-                    <option value="fr" selected>fr</option>
-                    <option value="en">en</option>
-                </select>
-            </p>
-        </form>
-        <script>
-            function redirectToLanguage() {
-                const langue = document.getElementById('langue').value;
-                if (langue === 'fr') {
-                    window.location.href = 'tuto.html';  // Redirige vers la page en français
-                } else if (langue === 'en') {
-                    window.location.href = 'tuto-en.html';  // Redirige vers la page en anglais
+    <header>
+        <div class="banniere">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="logo" class="logo">
+            </a>
+            <p class="titre">Potes de terre</p>
+            <a target="_blank" href="https://www.facebook.com/groups/potesdeterre" class="facebook-icon">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a target="_blank" href="mailto:potesdeterre@gmail.com" class="mail-icon">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+            <form method="get" action="" onchange="redirectToLanguage();">
+                <p>
+                    <label for="langue"></label>
+                    <select name="langue" id="langue">
+                        <option value="fr" selected>fr</option>
+                        <option value="en">en</option>
+                    </select>
+                </p>
+            </form>
+            <script>
+                function redirectToLanguage() {
+                    const langue = document.getElementById('langue').value;
+                    if (langue === 'fr') {
+                        window.location.href = 'tuto.html';  // Redirige vers la page en français
+                    } else if (langue === 'en') {
+                        window.location.href = 'tuto-en.html';  // Redirige vers la page en anglais
+                    }
                 }
-            }
-        </script>
-        <a href="index.html" class="b_commander">
-            Accueil
-        </a>
-    </div>
-</header>
-<div class="page">
-    <div class="intro">
-        <div class="txt-intro">
-            <h1>Bienvenue sur la page de paiement !</h1>
-            <p class="par">Potes de terre utilise Lydia® pour ses paiements.</p>
-            <h1>Pourquoi ?</h1>
-            <p class="par">Potes de terre s'engage à revendre au prix fixé par le fournisseur et ne fait donc aucun bénéfice. Lydia® est la solution idéale de paiement sans frais.</p>
-        </div>
-    </div>
-    <div class="txt-tuto">
-        <p class="ol-title">Comment payer ?</p>
-        <ol>
-        <li>Installez Lydia®</li>
-        <img src="images/lydia-logo.svg" alt="Lydia logo" class="lydia-logo">
-        <div class="app">
-            <a target="_blank" href="https://apps.apple.com/fr/app/lydia/id6475691727">
-                <img src="images/app-store.svg" alt="app-store-logo" class="store">
-            </a>
-            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.lydia.app">
-                <img src="images/play-store.svg" alt="google-play-store-logo" class="store">
+            </script>
+            <a href="index.html" class="b_commander">
+                Accueil
             </a>
         </div>
-            <li>Ouvrez l’application. Entrez le montant que vous voulez envoyer, puis cliquez sur <span class="gras">Envoyer</span>.</li>
-        <img src="images/tuto1.jpg" alt="tuto1" class="screenshot">
-        <li>Cliquez sur <span class="gras">Entrer un numéro / email</span></li>
-        <img src="images/tuto2.jpg" alt="tuto2" class="screenshot">
-        <li>Entrez l’adresse : <a href="mailto:potesdeterre@gmail.com" class="hp-lien">potesdeterre@gmail.com</a></li>
-        <li>Complétez les informations suivantes :</li>
-        <ul class="liste-inter">
-            <li>Le prix : calculez selon ce que vous commandez :
-                <ul class="prix_rappel">
-                    <li>Panier de fruits et légumes : 12€</li>
-                    <li>Demi-panier de fruits et légumes : 6€</li>
-                    <li>Panier de fruits : 10€</li>
-                    <li>Demi-panier de fruits : 5€</li>
+    </header>
+    <div class="page">
+        <div class="intro">
+            <div class="txt-intro">
+                <h1>Bienvenue sur la page de paiement !</h1>
+                <p class="par">Potes de terre utilise Lydia® pour ses paiements.</p>
+                <h1>Pourquoi ?</h1>
+                <p class="par">Potes de terre s'engage à revendre au prix fixé par le fournisseur et ne fait donc aucun
+                    bénéfice. Lydia® est la solution idéale de paiement sans frais.</p>
+            </div>
+        </div>
+        <div class="txt-tuto">
+            <p class="ol-title">Comment payer ?</p>
+            <ol>
+                <li>Installez Lydia®</li>
+                <img src="images/lydia-logo.svg" alt="Lydia logo" class="lydia-logo">
+                <div class="app">
+                    <a target="_blank" href="https://apps.apple.com/fr/app/lydia/id6475691727">
+                        <img src="images/app-store.svg" alt="app-store-logo" class="store">
+                    </a>
+                    <a target="_blank" href="https://play.google.com/store/apps/details?id=com.lydia.app">
+                        <img src="images/play-store.svg" alt="google-play-store-logo" class="store">
+                    </a>
+                </div>
+                <li>Ouvrez l’application. Entrez le montant que vous voulez envoyer, puis cliquez sur <span
+                        class="gras">Envoyer</span>.</li>
+                <img src="images/tuto1.jpg" alt="tuto1" class="screenshot">
+                <li>Cliquez sur <span class="gras">Entrer un numéro / email</span></li>
+                <img src="images/tuto2.jpg" alt="tuto2" class="screenshot">
+                <li>Entrez l’adresse : <a href="mailto:potesdeterre@gmail.com"
+                        class="hp-lien">potesdeterre@gmail.com</a></li>
+                <li>Complétez les informations suivantes :</li>
+                <ul class="liste-inter">
+                    <li>Le prix : calculez selon ce que vous commandez :
+                        <ul class="prix_rappel">
+                            <li>Panier de fruits et légumes : 12€</li>
+                            <li>Demi-panier de fruits et légumes : 6€</li>
+                            <li>Panier de fruits : 10€</li>
+                            <li>Demi-panier de fruits : 5€</li>
+                        </ul>
+                    </li>
+                    <li>Votre nom et prénom.</li>
+                    <li>Ce que vous voulez commander.</li>
                 </ul>
-            </li>
-            <li>Votre nom et prénom.</li>
-            <li>Ce que vous voulez commander.</li>
-        </ul>
-        <img src="images/tuto3.jpg" alt="tuto3" class="screenshot">
-        <li>Choisissez votre moyen de paiement, et confirmez.</li>
-        </ol>
-    </div>
-</div>
-<footer>
-    <div class="pied">
-        <div>
-            <p>Nous contacter :</p>
-            <ul>
-                <li>
-                    <a href="mailto:potesdeterre@gmail.com" class="hp-lien">potesdeterre@gmail.com</a>
-                </li>
-                <li>Sur place : chaque jeudi à 16h à la MDE</li>
-            </ul>
+                <img src="images/tuto3.jpg" alt="tuto3" class="screenshot">
+                <li>Choisissez votre moyen de paiement, et confirmez.</li>
+            </ol>
         </div>
-        <a href="index.html">
-            <img src="images/logo.svg" alt="logo" class="logo">
-        </a>
     </div>
-</footer>
+    <footer>
+        <div class="pied">
+            <div>
+                <p>Nous contacter :</p>
+                <ul>
+                    <li>
+                        <a href="mailto:potesdeterre@gmail.com" class="hp-lien">potesdeterre@gmail.com</a>
+                    </li>
+                    <li>Sur place : chaque jeudi à 13h à la MDE</li>
+                </ul>
+            </div>
+            <a href="index.html">
+                <img src="images/logo.svg" alt="logo" class="logo">
+            </a>
+        </div>
+    </footer>
 </body>
+
 </html>
